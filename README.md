@@ -2,6 +2,8 @@
 
 中文反诈宣传模型的 GRPO 实验代码、规则奖励和本地监督页面。代码按 MIT 许可。LoRA 模型单独发布于 [Shokou1/fanzha-qwen3.5-4b-grpo-v2](https://huggingface.co/Shokou1/fanzha-qwen3.5-4b-grpo-v2)，基座许可、修改说明和限制见模型卡与 NOTICE。
 
+本轮 40 步 GRPO 没有超过 SFT v2 基线；最终 adapter 作为未选中的实验权重发布。结果见 [实验记录](EXPERIMENT.md)。
+
 ## 文件与数据
 
 本仓库提供训练与奖励实现、最小 SFT 特征处理工具、依赖清单和本地监控。原始训练数据、验证题、生成回答、训练日志和模型权重不随代码仓库发布。复现实验需要自行准备经许可审核的数据，并取得符合 PEFT 格式的初始化 SFT adapter。
